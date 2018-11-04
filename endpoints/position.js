@@ -21,11 +21,11 @@ module.exports = {
 		return GLOBAL.makeRequest('GET', `/company/${company_id}/position/${position_id}/team`, accessToken)
 	},
 
-	all_positions: (accessToken, company_id, status) => {
+	all: (accessToken, company_id, status) => {
 		return GLOBAL.makeRequest('GET', `/company/${company_id}/positions?state=${status}`, accessToken)
 	},
 
-	new_position: (accessToken, company_id, position) => {
+	new: (accessToken, company_id, position) => {
 		return GLOBAL.makeRequest('POST', `/company/${company_id}/positions`, accessToken, position)
 	}
 }

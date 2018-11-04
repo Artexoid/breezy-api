@@ -81,15 +81,15 @@ module.exports = {
 		return GLOBAL.makeRequest('GET', `/company/${company_id}/position/${position_id}/candidates?pageSize=${page_size}&page=${page}&sort=${sort}`, accessToken)
 	},
 
-	new_candidate: (accessToken, company_id, position_id, candidate) => {
+	new: (accessToken, company_id, position_id, candidate) => {
 		return GLOBAL.makeRequest('POST', `/company/${company_id}/position/${position_id}/candidates`, accessToken, candidate)
 	},
 
-	new_candidate_from_resume: (accessToken, company_id, position_id, stage_id, actions_enabled, resume) => {
+	new_from_resume: (accessToken, company_id, position_id, stage_id, actions_enabled, resume) => {
 		return GLOBAL.uploadFile(`/company/${company_id}/position/${position_id}/candidates/resume?stage_id=${stage_id}&stage_actions_enabled=${actions_enabled}`, accessToken, resume)
 	},
 
-	search_by_email: (accessToken, company_id, email) => {
+	search: (accessToken, company_id, email) => {
 		return GLOBAL.makeRequest('GET', `/company/${company_id}/candidates/search?email_address=${email}`, accessToken)
 	}
 } 

@@ -29,7 +29,7 @@ module.exports = {
 		return GLOBAL.makeRequest('GET', `/company/${company_id}/template/${template_id}`, accessToken)
 	},
 
-	all_companies: (accessToken) => {
+	all: (accessToken) => {
 		return GLOBAL.makeRequest('GET', '/companies', accessToken)
 	}
 }
