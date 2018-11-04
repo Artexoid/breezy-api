@@ -1,0 +1,13 @@
+{
+  "name": "breezy-api",
+  "version": "1.0.0",
+  "description": "A wrapper for the Breezy API (http://breezy.hr)",
+  "main": "index.js",
+  "author": "Alex Sopinka",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "express": "^4.15.4",
+    "request": "^2.88.0"
+  }
+}

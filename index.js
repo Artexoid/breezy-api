@@ -1,0 +1,5 @@
+exports.auth = require('./endpoints/auth.js')
+exports.user = require('./endpoints/user.js')
+exports.company = require('./endpoints/company.js')
+exports.position = require('./endpoints/position.js')
+exports.candidate = require('./endpoints/candidate.js')
